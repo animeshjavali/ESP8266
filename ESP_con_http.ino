@@ -11,14 +11,14 @@
 #include <WiFiUdp.h>
 
 #include <ESP8266HTTPClient.h>
-char *ssid="Ani";
-char *password="ibringit";
+char *ssid="---";
+char *password="---";
 
 void setup() {
- /* pinMode(8,OUTPUT);
+  pinMode(8,OUTPUT);
   pinMode(9,OUTPUT);
   pinMode(10,OUTPUT);
-  pinMode(11,OUTPUT);*/
+  pinMode(11,OUTPUT);
 Serial.begin(115200);
 WiFi.begin(ssid,password);
 while(WiFi.status()!=WL_CONNECTED){
@@ -37,7 +37,7 @@ if(WiFi.status()==WL_CONNECTED){
   if(httpcode>0){
     String payload=http.getString();
     Serial.println(payload);
-  /*  if(payload=='1')
+   if(payload=='1')
       digitalWrite(8,HIGH);
     
     else if(payload=='2')
@@ -47,7 +47,7 @@ if(WiFi.status()==WL_CONNECTED){
             digitalWrite(9,HIGH);
      else if(payload=='4')
             digitalWrite(9,LOW);
-     */       
+           
   }
   http.end();
 }
