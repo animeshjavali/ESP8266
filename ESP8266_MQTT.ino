@@ -4,12 +4,12 @@
 #define mqtt_topic_sub "my_iot"
 
 //-------------------VARIABLES GLOBALES--------------------------
-char *ssid = "Ani";
-char *password= "ibringit";
+char *ssid = "YOUR NETWORK SSID";
+char *password= "PASSWORD";
 const char *mqtt_server = "m10.cloudmqtt.com";
-const int mqtt_port = 18172;
- char *mqtt_user = "iytoiwss";
- char *mqtt_pwd = "3nCzHJC94OLH";
+const int mqtt_port = 18172;// Will be given in "details" on CloudMQTT.
+ char *mqtt_user = "Unique user_id";// Will be given in "details" on CloudMQTT.
+ char *mqtt_pwd = "Password";
 
 //-------------------------------------------------------------------------
 WiFiClient espClient;
